@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D248C077-C572-4737-88DF-B944556103C7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ModelsClass</RootNamespace>
+    <AssemblyName>ModelsClass</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Code\BroadcastMessage.cs" />
+    <Compile Include="Code\CallbackData.cs" />
+    <Compile Include="Code\ChatMember.cs" />
+    <Compile Include="Code\Contact.cs" />
+    <Compile Include="Code\ContactMessage.cs" />
+    <Compile Include="Code\FileMessage.cs" />
+    <Compile Include="Code\Keyboard.cs" />
+    <Compile Include="Code\KeyboardButton.cs" />
+    <Compile Include="Code\KeyboardMessage.cs" />
+    <Compile Include="Code\Location.cs" />
+    <Compile Include="Code\LocationMessage.cs" />
+    <Compile Include="Code\MessageBase.cs" />
+    <Compile Include="Code\PictureMessage.cs" />
+    <Compile Include="Code\Responses\ApiResponseBase.cs" />
+    <Compile Include="Code\Responses\GetAccountInfoResponse.cs" />
+    <Compile Include="Code\Responses\GetUserDetailsResponse.cs" />
+    <Compile Include="Code\Responses\SendMessageResponse.cs" />
+    <Compile Include="Code\Responses\SetWebhookResponse.cs" />
+    <Compile Include="Code\StickerMessage.cs" />
+    <Compile Include="Code\TextMessage.cs" />
+    <Compile Include="Code\UrlMessage.cs" />
+    <Compile Include="Code\User.cs" />
+    <Compile Include="Code\UserBase.cs" />
+    <Compile Include="Code\UserDetails.cs" />
+    <Compile Include="Code\ViberBotClient.cs" />
+    <Compile Include="Code\ViberRequestApiException.cs" />
+    <Compile Include="Code\VideoMessage.cs" />
+    <Compile Include="Enums\BackgroundMediaType.cs" />
+    <Compile Include="Enums\ChatMemberRole.cs" />
+    <Compile Include="Enums\ErrorCode.cs" />
+    <Compile Include="Enums\EventType.cs" />
+    <Compile Include="Enums\KeyboardActionType.cs" />
+    <Compile Include="Enums\KeyboardInputFieldState.cs" />
+    <Compile Include="Enums\MessageType.cs" />
+    <Compile Include="Enums\OpenUrlMediaType.cs" />
+    <Compile Include="Enums\OpenUrlType.cs" />
+    <Compile Include="Enums\TextHorizontalAlign.cs" />
+    <Compile Include="Enums\TextSize.cs" />
+    <Compile Include="Enums\TextVerticalAlign.cs" />
+    <Compile Include="IAccountInfo.cs" />
+    <Compile Include="IUserBase.cs" />
+    <Compile Include="IViberBotClient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

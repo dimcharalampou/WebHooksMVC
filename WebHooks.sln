@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHooks", "Pass_Data_Between_Views_MVC\WebHooks.csproj", "{E29568FC-EC1B-4CC4-96CD-EA2117AC64F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DEE1E489-FA87-4414-A48A-8FD0F1367182}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelsClass", "ModelsClass\ModelsClass.csproj", "{D248C077-C572-4737-88DF-B944556103C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E29568FC-EC1B-4CC4-96CD-EA2117AC64F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E29568FC-EC1B-4CC4-96CD-EA2117AC64F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E29568FC-EC1B-4CC4-96CD-EA2117AC64F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E29568FC-EC1B-4CC4-96CD-EA2117AC64F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D248C077-C572-4737-88DF-B944556103C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D248C077-C572-4737-88DF-B944556103C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D248C077-C572-4737-88DF-B944556103C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D248C077-C572-4737-88DF-B944556103C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C9AAD4F-0A8E-47D5-9DE6-70980FC87DB0}
+	EndGlobalSection
+EndGlobal
